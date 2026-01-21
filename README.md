@@ -34,7 +34,7 @@ Each will assert whether the value exists, so Typescript's type checking will re
 
 ### Package Manager
 
-Using [npm](https://nodejs.org/en/download):
+Using [npm](https://nodejs.org/en):
 
 ```
 npm install @trigam/exists
