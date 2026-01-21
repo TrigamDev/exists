@@ -3,17 +3,17 @@ name: Tests
 on: [ push, pull_request ]
 
 jobs:
-	tests:
-		runs-on: ubuntu-latest
-		steps:
-			- name: Checkout
-			  uses: actions/checkout@v4
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
 
-			- name: Install bun
-			  uses: oven-sh/setup-bun@v2
+      - name: Install bun
+        uses: oven-sh/setup-bun@v2
 
-			- name: Install dependencies
-			  run: bun install
-			  
-			- name: Lint
-			  run: bun run lint
+      - name: Install dependencies
+        run: bun install
+        
+      - name: Lint
+        run: bun run lint
