@@ -1,0 +1,230 @@
+# --------------- Git/GitHub ----------------
+.git/
+.github/
+.gitignore
+
+# -------------- Dependencies ---------------
+# Dependencies and dependency manager files
+
+# NPM, Yarn, PNPM, Deno, Bun
+node_modules/
+
+# Yarn
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+# Uncomment if using zero-installs
+# !.yarn/cache
+
+# JSPM
+jspm_packages/
+
+# Bower
+bower_components/
+
+# Snowpack
+web_modules/
+
+
+
+# -------------- Configuration --------------
+
+# Typescript
+tsconfig.json
+
+# ESLint
+eslint.config.ts
+
+# VSCode
+.vscode-test/
+
+# node-waf
+.lock-wscript
+
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+
+
+# --------------- Environment ---------------
+# Files used for configuring the
+# development environment
+# (not environment variables)
+
+# Next.js
+next-env.d.ts
+
+
+
+# ---------------- Sensitive ----------------
+# Sensitive information like environment
+# variables and cryptographic keys
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Cryptographic keys
+*.pem
+
+
+
+# ------------- Database files --------------
+
+# SQLite
+*.sqlite
+
+# DynamoDB
+.dynamodb/
+
+
+
+# -------------- Runtime data ---------------
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+
+
+# -------------- Test coverage --------------
+
+# Istanbul
+coverage/
+.nyc_output/
+*.lcov
+
+# JSCover
+lib-cov/
+
+
+
+# ---------------- Integrity ----------------
+
+# Yarn
+.yarn-integrity
+
+
+
+# ------------------ Logs -------------------
+logs/
+*.log
+
+# NPM
+npm-debug.log*
+
+# Yarn
+yarn-debug.log*
+yarn-error.log*
+
+# Lerna
+lerna-debug.log*
+
+
+
+# ----------- Diagnostic reports ------------
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+
+
+# -------- Intermediate/temp storage --------
+.temp/
+
+# Node
+.node_repl_history``
+
+# Grunt
+.grunt/
+
+# Tern
+.tern-port
+
+
+
+# ----------------- Caches ------------------
+.cache/
+
+# Typescript
+*.tsbuildinfo
+
+# NPM
+.npm/
+
+# Astro
+.astro/
+
+# Sveltekit
+.svelte-kit/
+
+# VitePress
+**/.vitepress/cache/
+
+# Firebase
+.firebase/
+
+# SASS
+.sass-cache/
+
+# Parcel Bundler
+.parcel-cache/
+
+# Fusebox
+.fusebox/
+
+# ESLint
+.eslintcache/
+
+# Stylelint
+.stylelintcache/
+
+
+
+# ------------------ IDEs -------------------
+
+# VSCode
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Sublime Text
+*.sublime-workspace
+
+# IntelliJ IDEA
+.idea/
+
+# Eclipse
+.project
+.classpath
+
+
+
+# ------------ Directory config -------------
+
+# Windows
+Desktop.ini
+
+# MacOS
+.DS_Store
+
+# Linux
+.directory
+
+
+
+# ------------------ About ------------------
+
+# Author: Trigam
+
+# Based on:
+# - https://github.com/github/gitignore/blob/main/Node.gitignore
+# - https://github.com/github/gitignore/blob/main/Nextjs.gitignore
+# - https://gist.github.com/andreasonny83/b24e38b7772a3ea362d8e8d238d5a7bc
+# - https://github.com/bromne/typescript-optional/blob/master/.npmignore
