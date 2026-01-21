@@ -22,6 +22,14 @@ Provides two utility methods for handling potentially non-existent values:
 
 Each will assert whether the value exists, so Typescript's type checking will report the type accurately.
 
+## Contents
+
+- [Installation](#installation)
+- [Features](#features)
+- [Configuration](#configuration)
+- [FAQ](#faq)
+- [Help](#help)
+
 ## Installation
 
 ### Package Manager
@@ -56,9 +64,13 @@ Using [Bun](https://bun.sh/):
 bun add @trigam/exists
 ```
 
-## Usage
+## Features
 
 ### `exists`
+
+Returns a boolean of whether the given value exists or not, and if it does, asserts that the value exists.
+
+#### Example
 
 ```ts
 import { exists } from "@trigam/exists"
@@ -75,6 +87,10 @@ if ( exists( foo ) ) {
 ```
 
 ### `orDefault`
+
+Returns the given value if it exists. If it doesn't exist, it instead returns the provided fallback value.
+
+#### Example
 
 ```ts
 import { orDefault } from "@trigam/exists"
@@ -329,6 +345,12 @@ console.log( exists(
 ) )
 // true
 ```
+
+## FAQ
+
+### ... why does this exist? Couldn't you just easily do this yourself?
+
+In complete honesty, I mostly just published this cause I'm tired of copy+pasting the same utility script into all my projects. Hopefully this also proves helpful to others, though.
 
 ## Help
 If you don't understand something, need help, or just have some questions, come ask me on my [Discord server](https://dsc.gg/trigam-den).
