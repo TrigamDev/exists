@@ -15,9 +15,6 @@ Each will assert whether the value exists, so Typescript's type checking will re
 
 ## Installation
 
-> [!WARNING]
-> I'm working on getting this published to npm, so these won't work for the time being.
-
 ### npm
 
 ```
