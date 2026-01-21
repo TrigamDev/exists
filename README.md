@@ -1,6 +1,6 @@
 # Exists
 
-![GitHub License](https://img.shields.io/github/license/TrigamDev/exists?style=for-the-badge)
+[![GitHub License](https://img.shields.io/github/license/TrigamDev/exists?style=for-the-badge)](./LICENSE.md)
 [![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://dsc.gg/trigam-den)
 
 A very simple library for checking and asserting whether a value exists.
