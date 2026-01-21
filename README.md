@@ -1,7 +1,16 @@
+<div align="center">
+
 # Exists
+
+<!-- NPM info -->
+[![NPM Version](https://img.shields.io/npm/v/%40trigam%2Fexists?style=for-the-badge)](https://www.npmjs.com/package/@trigam/exists)
+[![NPM Downloads](https://img.shields.io/npm/dy/%40trigam%2Fexists?style=for-the-badge)](https://npm-stat.com/charts.html?package=@trigam/exists)
+[![Install Size](https://img.shields.io/badge/dynamic/json?url=https://packagephobia.com/v2/api.json?p=@trigam/exists&query=$.install.pretty&label=install%20size&style=for-the-badge)](https://packagephobia.now.sh/result?p=@trigam/exists)
 
 [![GitHub License](https://img.shields.io/github/license/TrigamDev/exists?style=for-the-badge)](./LICENSE.md)
 [![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://dsc.gg/trigam-den)
+
+</div>
 
 A very simple library for checking and asserting whether a value exists.
 
@@ -15,13 +24,33 @@ Each will assert whether the value exists, so Typescript's type checking will re
 
 ## Installation
 
-### npm
+### Package Manager
+
+Using [npm](https://nodejs.org/en/download):
 
 ```
 npm install @trigam/exists
 ```
 
-### Bun
+Using [Yarn](https://yarnpkg.com/):
+
+```
+yarn add @trigam/exists
+```
+
+Using [pnpm](https://pnpm.io/):
+
+```
+pnpm add @trigam/exists
+```
+
+Using [Deno](https://deno.com/):
+
+```
+deno add npm:@trigam/exists
+```
+
+Using [Bun](https://bun.sh/):
 
 ```
 bun add @trigam/exists
