@@ -1,0 +1,6 @@
+echo "
+
+
+[1mLinting commit message...[0m
+"
+bunx --no -- commitlint --edit $1
