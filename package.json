@@ -1,6 +1,5 @@
 {
 	"$schema": "https://json.schemastore.org/package.json",
-
 	"name": "@trigam/exists",
 	"description": "Checks and asserts whether a value exists.",
 	"author": {
@@ -8,36 +7,49 @@
 		"email": "trigamdev@gmail.com",
 		"url": "https://www.trigam.dev"
 	},
-
 	"version": "0.0.1",
 	"license": "MIT",
-
-	"keywords": ["library", "util"],
-
+	"keywords": [
+		"library",
+		"util"
+	],
 	"main": "./dist/index.js",
 	"module": "./dist/index.mjs",
 	"types": "./dist/index.d.ts",
-	"files": [ "dist" ],
+	"files": [
+		"dist"
+	],
 	"exports": {
 		"import": "./dist/index.mjs",
 		"require": "./dist/index.js"
 	},
-
 	"scripts": {
 		"build": "tsup",
-		"lint": "bunx eslint ./src"
+		"lint": "bunx eslint ./src",
+		"prepare": "husky"
 	},
-
+	"lint-staged": {
+		"**/*.{js,mjs,cjs,ts,mts,cts}": ["eslint --fix"]
+	},
 	"devDependencies": {
+		"@commitlint/cli": "^20.3.1",
+		"@commitlint/config-conventional": "^20.3.1",
+		"@commitlint/format": "^20.3.1",
+		"@commitlint/types": "^20.3.1",
 		"@eslint/js": "^9.39.2",
 		"@stylistic/eslint-plugin": "^5.7.0",
 		"@types/bun": "latest",
+		"@types/parse-gitignore": "^1.0.2",
 		"@typescript-eslint/parser": "^8.53.1",
+		"conventional-changelog-atom": "^5.0.0",
 		"eslint": "^9.39.2",
 		"eslint-plugin-depend": "^1.4.0",
 		"eslint-plugin-import-x": "^4.16.1",
 		"globals": "^17.0.0",
+		"husky": "^9.1.7",
 		"jiti": "^2.6.1",
+		"lint-staged": "^16.2.7",
+		"parse-gitignore": "^2.0.0",
 		"tsup": "^8.5.1",
 		"typescript": "^5.9.3",
 		"typescript-eslint": "^8.53.1"
