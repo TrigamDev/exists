@@ -1,0 +1,14 @@
+echo "
+
+
+[1mLinting...[0m
+"
+FORCE_COLOR=1 bunx lint-staged
+
+echo "
+
+
+[1mTesting...[0m
+"
+FORCE_COLOR=1 bun test
+# exit 1

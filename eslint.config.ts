@@ -12,9 +12,16 @@ import { importX as importPlugin } from "eslint-plugin-import-x"
 import globals from "globals"
 import { plugin as tslintPlugin } from "typescript-eslint"
 
+import { parse as parseGitignore } from "parse-gitignore"
+
 export default defineConfig( [
 	{
-		files: [ "**/*.{js,mjs,cjs,ts,mts,cts}" ],
+		files: [ "{src|test}/**/*.{js,mjs,cjs,ts,mts,cts}" ],
+		ignores: [
+			"eslint.config.ts"
+		].concat( parseGitignore( await Bun.file( ".gitignore" ).text() ).patterns.map(
+			( line: string ) => { return line.endsWith( "/" ) ? `${ line }**` : line }
+		) ),
 
 		plugins: {
 			jseslint,

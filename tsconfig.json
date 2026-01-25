@@ -1,12 +1,19 @@
 {
-	"include": [ "src", "test" ],
+	"include": [
+		"src",
+		"test",
+	],
+	"exclude": [
+		"node_modules",
+		"dist"
+	],
 
 	"compilerOptions": {
 		// Paths
 		"baseUrl": ".",
 		"paths": {
-			"@exists/*": [ "./src/*" ],
-			"@test/*": [ "./test/*" ]
+			"@exists/*": [ "src/*" ],
+			"@test/*": [ "test/*" ]
 		},
 
 		// Language features
