@@ -1,4 +1,13 @@
-import { UserConfig, RuleConfigSeverity as Level } from "@commitlint/types"
+/*
+	eslint-disable
+	no-magic-numbers,
+	@import/named
+*/
+
+import {
+	RuleConfigSeverity as Level,
+	UserConfig
+} from "@commitlint/types"
 
 const Config: UserConfig = {
 	extends: [ "@commitlint/config-conventional" ],
@@ -32,7 +41,7 @@ const Config: UserConfig = {
 			"chore",
 			"merge",
 			"revert",
-			"docs",
+			"docs"
 		] ],
 		"type-min-length": [ Level.Error, "always", 3 ],
 		"type-max-length": [ Level.Error, "always", 16 ],
