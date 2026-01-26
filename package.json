@@ -30,7 +30,7 @@
 		"prepare": "husky"
 	},
 	"lint-staged": {
-		"**/*.{js,mjs,cjs,ts,mts,cts}": ["eslint --fix"]
+		"**/*.{js,mjs,cjs,ts,mts,cts}": ["bun run lint"]
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^20.3.1",
