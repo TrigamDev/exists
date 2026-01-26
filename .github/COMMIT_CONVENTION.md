@@ -4,6 +4,8 @@ This is based on [Conventional Commits 1.0.0](https://www.conventionalcommits.or
 
 A majority of this commit convention is enforced by [commitlint](https://commitlint.js.org/).
 
+[Commit Message Editor](https://github.com/bendera/vscode-commit-message-editor) can also be used to help write compliant commit messages.
+
 ## [Message Format](#message-format)
 
 Commit messages must be structured as follows:
