@@ -2,23 +2,27 @@
 	eslint-disable
 	no-magic-numbers
 */
+/* global __dirname */
 
+import path from "path"
+
+import { includeIgnoreFile } from "@eslint/compat"
 import jseslint from "@eslint/js"
 import stylistic from "@stylistic/eslint-plugin"
 import tsParser from "@typescript-eslint/parser"
-import { Config, defineConfig } from "eslint/config"
-import { includeIgnoreFile } from "@eslint/compat"
+import {
+	Config, defineConfig
+} from "eslint/config"
 import dependPlugin from "eslint-plugin-depend"
 import { importX as importPlugin } from "eslint-plugin-import-x"
 import globals from "globals"
 import { plugin as tslintPlugin } from "typescript-eslint"
-import path from "path"
 
 const config: Config[] = defineConfig( [
 	includeIgnoreFile( path.join( __dirname, ".gitignore" ) ),
 	{
 		files: [
-			"**/*.{js,mjs,cjs,ts,mts,cts}",
+			"**/*.{js,mjs,cjs,ts,mts,cts}"
 		],
 
 		plugins: {
@@ -113,7 +117,7 @@ const config: Config[] = defineConfig( [
 			"@stylistic/arrow-spacing": [ "warn", {
 				before: true,
 				after: true
-			}],
+			} ],
 			"@stylistic/block-spacing": "warn",
 			"@stylistic/comma-spacing": [ "warn", {
 				before: false,
