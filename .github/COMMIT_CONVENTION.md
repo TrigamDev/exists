@@ -1,65 +1,87 @@
-# Commit Convention
+# [Commit Convention](#commit-convention)
 
 This is based on [Conventional Commits 1.0.0](https://www.conventionalcommits.org/en/v1.0.0/).
 
 A majority of this commit convention is enforced by [commitlint](https://commitlint.js.org/).
 
-## Message Format
+## [Message Format](#message-format)
 
-Commit messages should be structured as follows:
+Commit messages must be structured as follows:
 
 <pre>
-<b><a href="#type">&lt;type&gt;</a></b>(<b><a href="#scope">&lt;scope&gt;</a></b>): <b><a href="#subject">&lt;subject&gt;</a></b>
+<b><a href="#type">&lt;type&gt;</a></b>(<b><a href="#scopes">&lt;scope(s)&gt;</a></b>): <b><a href="#subject">&lt;subject&gt;</a></b>
 <sub>Blank line as separator</sub>
 <b><a href="#body">&lt;body&gt;</a></b>
 <sub>Blank line as separator</sub>
 <b><a href="#footer">&lt;footer(s)&gt;</a></b>
 </pre>
 
-### Type
+### [Header](#header)
 
-The `type` should indicate the type of change the commit makes.
+The `header` is the first line of the commit message and is the primary section. It's what is immediately visible, and contains the essential information of the commit in a concise, at-a-glance format
+
+- The header is **required**, though some parts are optional.
+- The header must be in lower case.
+- The header *should* be no shorter than 16 characters, but this is just a recommendation, not a requirement.
+- The header must be no longer than 72 characters.
+
+#### [Type](#type)
+
+The `type` must indicate the type of change the commit makes.
+
 - The type is **required**.
-- Should be a lowercase, single-word noun.
+- The type must be in lower case.
+- The type must be a one-word noun (singular or plural).
+- The type must be shortened as long as it's still unambiguous.
+- The type must be no shorter than 3 characters.
+- The type must be no longer than 16 characters.
 
-#### Types
+The type must be one of the following:
 
-- `feat`: Commits that add, change, or remove features.
-- `fix`: Commits that fix a bug or an issue.
-- `refactor`: Commits that rewrite or restructure code without altering behavior.
-- `perf`: Type of `refactor` that specifically improves performance.
-- `translations`: Commits that affect translations.
-- `tests`: Commits that affect tests.
-- `build`: Commits that affect build-related components, such as build tools, dependencies, etc.
-- `ops`: Commits that affect operational aspects, such as infrastructure, deployment, CI/CD pipelines, etc.
-- `chore`: Commits that represent basic maintainance and tasks, such as initial commit, `.gitignore` changes, etc.
-- `merge`: Commits that merge multiple branches.
-- `revert`: Commits that revert previous commits.
-	- The header should be that of the commit being reverted.
-	- The body should be `This reverts commit <hash>.`, where `hash` is the SHA hash of the commit being reverted.
-- `docs`: Commits that affect documentation.
+| Type           | Description                                                                                             |
+|----------------|---------------------------------------------------------------------------------------------------------|
+| `feat`         | Commits that add, change, or remove features.                                                           |
+| `fix`          | Commits that fix a bug or an issue.                                                                     |
+| `refactor`     | Commits that rewrite or restructure code without altering behavior.                                     |
+| `perf`         | Commits that improve performance without altering behavior.                                             |
+| `translations` | Commits that affect translations.                                                                       |
+| `tests`        | Commits that affect tests.                                                                              |
+| `build`        | Commits that affect build-related components, such as build tools, dependencies, etc.                   |
+| `ops`          | Commits that affect operational aspects, such as infrastructure, deployment, CI/CD pipelines, etc.      |
+| `chore`        | Commits that represent basic maintenance and tasks, such as initial commit, `.gitignore` changes, etc. |
+| `merge`        | Commits that merge multiple branches.                                                                   |
+| `revert`       | Commits that revert previous commits.                                                                   |
+| `docs`         | Commits that affect documentation.                                                                      |
 
-### Scope
+If the `type` is `revert`:
+- The header should be that of the commit being reverted.
+- The body should be `This reverts commit <hash>.`, where `hash` is the SHA hash of the commit being reverted.
 
-The `scope` provides additional context to the commit.
+#### [Scopes](#scopes)
 
-- The scope is **optional**.
-- Should be lower case and surrounded by parentheses.
-- If using multiple scopes, they should be in a comma-delimited list.
-- Do not use issue identifiers as the scope.
+The `scopes` provide additional context to the commit.
 
-### Breaking Change
+- The scopes are **optional**.
+- The scopes must be in lower case.
+- Scopes may include spaces and be multiple words.
+- The scopes must be surrounded by parentheses.
+- Do not use issue identifiers as the scopes.
+- If using multiple scopes, they must be formatted in a comma and space-delimited list.
+- The scopes section, collectively, must be no longer than 32 characters (not including the parentheses).
 
-A commit that introduces a breaking change must be indicated by a `!` following the type and scope. Breaking changes should be described in the [footer](#footer), if the [subject](#subject) isn't sufficiently informative.
+#### [Breaking Change](#breaking-change)
 
-### Subject
+A commit that introduces a breaking change must be indicated by a `!` following the type and scopes. Breaking changes should be described in the [footer](#breaking-changes), if the [subject](#subject) isn't sufficiently informative.
+
+#### [Subject](#subject)
 
 The `subject` contains a concise description of the change being made.
 
 - The subject is **required**.
-- Should be lower case.
-- Don't capitalize the first letter.
-- Use the imperative, present tense of verbs.
+- The subject must be in lower case.
+- The subject should be longer than 5 characters, but this is just a recommendation, not a requirement.
+- The subject must be no longer than 50 characters.
+- The subject must use the imperative, present tense of verbs.
 	- Think of "This commit will..." or "This commit should...".
 	- ```
 	  ✅ change this to that
@@ -77,22 +99,38 @@ The `subject` contains a concise description of the change being made.
 	  ❌ add test for baz...
 	  ```
 
-### Body
+### [Body](#body)
 
-The `body` should include the motivation for the change and contrast the new behavior with old behavior.
+The `body` is an optional, extended description of the changes being made, and should include the motivation for the change and contrast the new behavior with old behavior.
 
 - The body is **optional**.
-- Should be in sentence case and end with a period.
-- Similar to the [subject](#subject), use the imperative, present tense of verbs.
+- The body should be in sentence case and end with a period.
+- Lines in the body should be no longer than 72 characters. If a line exceeds this length, it should be split between multiple lines.
 
-### Footer
+### [Footer](#footer)
 
 The `footer` should contain any information about [breaking changes](#breaking-change) and references to issues that this commit closes.
 
-- [Breaking changes](#breaking-change) should indicated with the `BREAKING:` indicator, followed by either a space or a newline.
-- Closed issues should be indicated with the `closes:`, followed by a space and a comma-delimited list of issue references.
+#### [Breaking Changes](#breaking-changes)
 
-## Examples
+[Breaking changes](#breaking-change) must be indicated with a `BREAKING:` indicator.
+
+If the commit only makes one [breaking change](#breaking-change), it must be described on the same line as the indicator, with a space separating it from the indicator.
+
+If multiple [breaking changes](#breaking-change) are made by the commit, they must be formatted as an unordered list, starting on the line beneath the indicator.
+
+- Breaking changes must be in lower case.
+- Breaking changes must not end with punctuation.
+- Lines should be no longer than 72 characters.
+
+#### [Closed Issues](#closed-issues)
+
+Closed issues must be indicated with the `Closes:` indicator, followed by a space and the issue references formatted in a comma and space-delimited list.
+
+- Aside from commas separating issue references, closed issues must not use punctuation.
+- Lines should be no longer than 72 characters. If a line exceeds this length, it should be split between multiple lines. The subsequent lines should not be indented.
+
+## [Examples](#examples)
 
 ```
 feat: add really cool feature
@@ -104,11 +142,11 @@ fix(api): fix edge case where the server would explode
 Fixing this because we've lost 3 servers just this week, this is kinda important.
 Servers should no longer explode now.
 
-closes: #37, #42
+Closes: #37, #42
 ```
 
 ```
-feat!(api): remove execute sql endpoint
+feat!(api, security): remove execute sql endpoint
 
 Having an open, unsecured endpoint for executing database queries maybe isn't the best idea for security.
 
@@ -120,7 +158,10 @@ fix: prevent process from running out of memory after several minutes
 
 This error occurred due to a recursive function missing a base case.
 
-closes: #84
+BREAKING:
+- the process running out of memory can no longer be used as a timer
+- xkcd 1172
+Closes: #84
 ```
 
 ```
@@ -149,9 +190,10 @@ build(release): bump version to v1.0.0
 ops(ci): fix typo in workflow name
 ```
 
-## Attribution
+## [Attribution](#attribution)
 
 This commit convention is adapted from:
 - [Conventional Commits v1.0.0](https://www.conventionalcommits.org/en/v1.0.0/)
 - [qoomon/conventional-commits-cheatsheet.md](https://gist.github.com/qoomon/5dfcdf8eec66a051ecd85625518cfd13)
-- [discord.js's commit convention](https://github.com/discordjs/discord.js/blob/main/.github/COMMIT_CONVENTION.md) (and, by extension, [Angular's commit convention](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-angular))
+- [Angular's commit convention](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-angular)
+- [discord.js's commit convention](https://github.com/discordjs/discord.js/blob/main/.github/COMMIT_CONVENTION.md)
