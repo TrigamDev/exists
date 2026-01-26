@@ -12,14 +12,14 @@ import dependPlugin from "eslint-plugin-depend"
 import { importX as importPlugin } from "eslint-plugin-import-x"
 import globals from "globals"
 import { plugin as tslintPlugin } from "typescript-eslint"
-
-import { fileURLToPath } from "bun"
+import path from "path"
 
 const config: Config[] = defineConfig( [
-	includeIgnoreFile( fileURLToPath( new URL( ".gitignore", import.meta.url ) ) ),
+	includeIgnoreFile( path.join( __dirname, ".gitignore" ) ),
 	{
-		files: [ "**/*.{js,mjs,cjs,ts,mts,cts}" ],
-		ignores: [ "*.config.*" ],
+		files: [
+			"**/*.{js,mjs,cjs,ts,mts,cts}",
+		],
 
 		plugins: {
 			jseslint,
