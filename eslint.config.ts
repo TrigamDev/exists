@@ -6,22 +6,20 @@
 import jseslint from "@eslint/js"
 import stylistic from "@stylistic/eslint-plugin"
 import tsParser from "@typescript-eslint/parser"
-import { defineConfig } from "eslint/config"
+import { Config, defineConfig } from "eslint/config"
+import { includeIgnoreFile } from "@eslint/compat"
 import dependPlugin from "eslint-plugin-depend"
 import { importX as importPlugin } from "eslint-plugin-import-x"
 import globals from "globals"
 import { plugin as tslintPlugin } from "typescript-eslint"
 
-import { parse as parseGitignore } from "parse-gitignore"
+import { fileURLToPath } from "bun"
 
-export default defineConfig( [
+const config: Config[] = defineConfig( [
+	includeIgnoreFile( fileURLToPath( new URL( ".gitignore", import.meta.url ) ) ),
 	{
-		files: [ "{src|test}/**/*.{js,mjs,cjs,ts,mts,cts}" ],
-		ignores: [
-			"eslint.config.ts"
-		].concat( parseGitignore( await Bun.file( ".gitignore" ).text() ).patterns.map(
-			( line: string ) => { return line.endsWith( "/" ) ? `${ line }**` : line }
-		) ),
+		files: [ "**/*.{js,mjs,cjs,ts,mts,cts}" ],
+		ignores: [ "*.config.*" ],
 
 		plugins: {
 			jseslint,
@@ -718,3 +716,5 @@ export default defineConfig( [
 		}
 	}
 ] )
+
+export default config
