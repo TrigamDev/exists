@@ -1,5 +1,141 @@
 {
 	"files.associations": {
+		// ANSI Colors
 		"git-error-*": "ansi"
-	}
+	},
+
+	// Commit Message Editor
+	"commit-message-editor.view.defaultView": "form",
+
+	"commit-message-editor.staticTemplate": [
+		"type(scope): subject",
+		"",
+		"Message body",
+		"",
+		"Message footer"
+	],
+
+	"commit-message-editor.dynamicTemplate": [
+		"{type}{scope}: {subject}",
+		"",
+		"{body}",
+		"",
+		"{breaking_changes}",
+		"{closes}"
+	],
+
+	"commit-message-editor.tokens": [
+		{
+			"label": "",
+			"description": "See .github/COMMIT_CONVENTION.md for more information about how each component should be formatted.",
+
+			"type": "boolean"
+		},
+		{
+			"label": "Type",
+			"description": "Type of change the commit makes.",
+
+			"name": "type",
+			"type": "enum",
+			"options": [
+				{
+					"label": "---",
+					"value": ""
+				},
+				{
+					"label": "feat",
+					"description": "Commits that add, change, or remove features."
+				},
+				{
+					"label": "fix",
+					"description": "Commits that fix a bug or an issue."
+				},
+				{
+					"label": "refactor",
+					"description": "Commits that rewrite or restructure code without altering behavior."
+				},
+				{
+					"label": "perf",
+					"description": "Commits that improve performance without altering behavior."
+				},
+				{
+					"label": "translations",
+					"description": "Commits that affect translations."
+				},
+				{
+					"label": "tests",
+					"description": "Commits that affect tests."
+				},
+				{
+					"label": "build",
+					"description": "Commits that affect build-related components, such as build tools, dependencies, etc."
+				},
+				{
+					"label": "ops",
+					"description": "Commits that affect operational aspects, such as infrastructure, deployment, CI/CD pipelines, etc."
+				},
+				{
+					"label": "chore",
+					"description": "Commits that represent basic maintainance and tasks, such as initial commit, .gitignore changes, etc."
+				},
+				{
+					"label": "merge",
+					"description": "Commits that merge multiple branches."
+				},
+				{
+					"label": "revert",
+					"description": "Commits that revert previous commits."
+				},
+				{
+					"label": "docs",
+					"description": "Commits that affect documentation."
+				}
+			]
+		},
+		{
+			"label": "Scopes",
+			"description": "Optional, additional context to the changes the commit makes.",
+
+			"name": "scope",
+			"type": "text",
+			"multiline": false,
+			"prefix": "(",
+			"suffix": ")"
+		},
+		{
+			"label": "Subject",
+			"description": "A concise description of the change being made.",
+
+			"name": "subject",
+			"type": "text",
+			"multiline": false,
+			"maxLength": 50
+		},
+		{
+			"label": "Body",
+			"description": "An optional, extended description of the changes being made, and should include the motivation for the change and contrast the new behavior with old behavior",
+			
+			"name": "body",
+			"type": "text",
+			"multiline": true,
+			"maxLineLength": 72
+		},
+		{
+			"label": "Breaking changes",
+			"description": "A list of breaking changes this commit may make. Leave blank if the commit doesn't make any breaking changes.",
+
+			"name": "breaking_changes",
+			"type": "text",
+			"multiline": true,
+			"maxLineLength": 72
+		},
+		{
+			"label": "Closed issues",
+			"name": "closes",
+			"description": "A list of issues this commit closes. Leave blank if the commit doesn't close any issues.",
+			"type": "text",
+			"multiline": false,
+			"maxLineLength": 72
+		}
+	]
 }

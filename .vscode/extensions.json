@@ -1,5 +1,6 @@
 {
 	"recommendations": [
-		"iliazeus.vscode-ansi"
+		"iliazeus.vscode-ansi",
+		"adam-bender.commit-message-editor"
 	]
 }
