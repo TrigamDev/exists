@@ -6,6 +6,21 @@ A majority of this commit convention is enforced by [commitlint](https://commitl
 
 [Commit Message Editor](https://github.com/bendera/vscode-commit-message-editor) can also be used to help write compliant commit messages.
 
+## [Contents](#contents)
+
+- [Message Format](#message-format)
+	- [Header](#header)
+		- [Type](#type)
+		- [Scopes](#scopes)
+		- [Breaking Change](#breaking-change)
+		- [Subject](#subject)
+	- [Body](#body)
+	- [Footer](#footer)
+		- [Breaking Changes](#breaking-changes)
+		- [Closed Issues](#closed-issues)
+- [Examples](#examples)
+- [Attribution](#attribution)
+
 ## [Message Format](#message-format)
 
 Commit messages must be structured as follows:
