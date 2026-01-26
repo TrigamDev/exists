@@ -49,7 +49,7 @@ const Config: UserConfig = {
 		// Scope
 		"scope-case": [ Level.Error, "always", "lower-case" ],
 		"scope-delimiter-style": [ Level.Error, "always", [
-			", ",
+			",",
 			" "
 		] ],
 		"scope-empty": [ Level.Disabled ],
