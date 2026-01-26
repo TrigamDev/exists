@@ -2,6 +2,7 @@
 	"include": [
 		"src",
 		"test",
+		"*.config.*"
 	],
 	"exclude": [
 		"node_modules",
@@ -17,9 +18,10 @@
 		},
 
 		// Language features
-		"lib": ["ESNext"],
+		"lib": [ "ESNext" ],
 		"target": "ESNext",
-		"module": "ESNext",
+		"module": "NodeNext",
+		"moduleResolution": "NodeNext",
 		"moduleDetection": "force",
 		"allowJs": true,
 		"esModuleInterop": true,
