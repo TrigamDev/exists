@@ -1,5 +1,25 @@
 # [Code of Conduct](#code-of-conduct)
 
+## [Contents](#contents)
+
+- [Our Pledge](#our-pledge)
+- [Guidelines](#guidelines)
+	- [Be Respectful](#be-respectful)
+	- [Respect Boundaries](#respect-boundaries)
+	- [Minimize Drama](#minimize-drama)
+	- [Handle Feedback Gracefully](#handle-feedback-gracefully)
+	- [Take Responsibility](#take-responsibility)
+	- [Act Responsibly](#act-responsibly)
+	- [Do Not Plagiarize](#do-not-plagiarize)
+	- [Be Human](#be-human)
+- [Reporting an Issue](#reporting-an-issue)
+- [Enforcement](#enforcement)
+	- [Warning](#warning)
+	- [Temporary Suspension](#temporary-suspension)
+	- [Permanent Ban](#permanent-ban)
+- [Scope](#scope)
+- [Attribution](#attribution)
+
 ## [Our Pledge](#our-pledge)
 
 We pledge to make our community welcoming, safe, and equitable for all.
