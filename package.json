@@ -25,7 +25,7 @@
 	},
 	"scripts": {
 		"build": "tsup",
-		"lint": "bunx eslint",
+		"lint": "bunx --bun eslint",
 		"prepare": "husky"
 	},
 	"lint-staged": {
