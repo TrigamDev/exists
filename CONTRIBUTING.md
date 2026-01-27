@@ -2,7 +2,7 @@
 
 First off, thank you for showing interest in contributing! It means a lot to us and we really appreciate it. Thank you, we mean it. \<3
 
-This guide outlines how to contribute in a way that meets the project’s quality standards.
+This manual outlines how to contribute in a way that meets the project’s quality standards.
 
 Contributions of any skill level are welcome, and we’re happy to help with issues, pull requests, and feature ideas.
 
