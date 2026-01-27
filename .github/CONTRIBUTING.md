@@ -37,9 +37,7 @@ This project and everyone participating in it are governed by the [Code of Condu
 	- [Creating a Development Environment](#creating-a-development-environment)
 	- [Workflow Checks](#workflow-checks)
 		- [ESLint](#eslint)
-			- [Running Manually](#running-manually)
 		- [Test Runner](#test-runner)
-			- [Running Manually](#running-manually-1)
 	- [Commit Convention](#commit-convention)
 	- [Before Making a Pull Request](#before-making-a-pull-request)
 	- [Making a Pull Request](#making-a-pull-request)
@@ -178,8 +176,6 @@ To maintain code quality and consistency, this project uses automated checks tha
 
 This project uses ESLint to help enforce consistent code style and catch common issues early. ESLint uses the [eslint.config.ts](https://github.com/TrigamDev/exists/blob/main/eslint.config.ts) file for its configuration, and has several plugins to add extra linting/formatting rules. If you'd like more info about what rules ESLint uses and how they're configured, make sure to check the config file.
 
-##### Running Manually
-
 If you'd like to run ESLint manually, run inside the repository's root directory:
 ```
 bun run lint
@@ -192,8 +188,6 @@ bun run lint
 #### [Test Runner](https://bun.com/docs/test)
 
 Automated tests are used to verify that changes behave as expected and don’t introduce regressions.
-
-##### Running Manually
 
 If you'd like to run the tests manually, run inside the repository's root directory:
 ```
