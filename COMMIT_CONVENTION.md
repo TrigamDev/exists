@@ -2,9 +2,11 @@
 
 This is based on [Conventional Commits 1.0.0](https://www.conventionalcommits.org/en/v1.0.0/).
 
-A majority of this commit convention is enforced by [commitlint](https://commitlint.js.org/).
-
-[Commit Message Editor](https://github.com/bendera/vscode-commit-message-editor) can also be used to help write compliant commit messages.
+> [!TIP]
+>
+> The majority of the Commit Convention is automatically enforced by [commitlint](https://commitlint.js.org/).
+>
+> [Commit Message Editor](https://github.com/bendera/vscode-commit-message-editor) can also be used to help write compliant commit messages, providing a simple form to fill out the commit message.
 
 ## Contents
 
