@@ -1,4 +1,4 @@
-# [Commit Convention](#commit-convention)
+# Commit Convention
 
 This is based on [Conventional Commits 1.0.0](https://www.conventionalcommits.org/en/v1.0.0/).
 
@@ -6,7 +6,7 @@ A majority of this commit convention is enforced by [commitlint](https://commitl
 
 [Commit Message Editor](https://github.com/bendera/vscode-commit-message-editor) can also be used to help write compliant commit messages.
 
-## [Contents](#contents)
+## Contents
 
 - [Message Format](#message-format)
 	- [Header](#header)
@@ -21,7 +21,7 @@ A majority of this commit convention is enforced by [commitlint](https://commitl
 - [Examples](#examples)
 - [Attribution](#attribution)
 
-## [Message Format](#message-format)
+## Message Format
 
 Commit messages must be structured as follows:
 
@@ -33,7 +33,7 @@ Commit messages must be structured as follows:
 <b><a href="#footer">&lt;footer(s)&gt;</a></b>
 </pre>
 
-### [Header](#header)
+### Header
 
 The `header` is the first line of the commit message and is the primary section. It's what is immediately visible, and contains the essential information of the commit in a concise, at-a-glance format
 
@@ -42,7 +42,7 @@ The `header` is the first line of the commit message and is the primary section.
 - The header *should* be no shorter than 16 characters, but this is just a recommendation, not a requirement.
 - The header must be no longer than 72 characters.
 
-#### [Type](#type)
+#### Type
 
 The `type` must indicate the type of change the commit makes.
 
@@ -74,7 +74,7 @@ If the `type` is `revert`:
 - The header should be that of the commit being reverted.
 - The body should be `This reverts commit <hash>.`, where `hash` is the SHA hash of the commit being reverted.
 
-#### [Scopes](#scopes)
+#### Scopes
 
 The `scopes` provide additional context to the commit.
 
@@ -86,11 +86,11 @@ The `scopes` provide additional context to the commit.
 - If using multiple scopes, they must be formatted in a comma and space-delimited list.
 - The scopes section, collectively, must be no longer than 32 characters (not including the parentheses).
 
-#### [Breaking Change](#breaking-change)
+#### Breaking Change
 
 A commit that introduces a breaking change must be indicated by a `!` following the type and scopes. Breaking changes should be described in the [footer](#breaking-changes), if the [subject](#subject) isn't sufficiently informative.
 
-#### [Subject](#subject)
+#### Subject
 
 The `subject` contains a concise description of the change being made.
 
@@ -116,7 +116,7 @@ The `subject` contains a concise description of the change being made.
 	  ❌ add test for baz...
 	  ```
 
-### [Body](#body)
+### Body
 
 The `body` is an optional, extended description of the changes being made, and should include the motivation for the change and contrast the new behavior with old behavior.
 
@@ -124,11 +124,11 @@ The `body` is an optional, extended description of the changes being made, and s
 - The body should be in sentence case and end with a period.
 - Lines in the body should be no longer than 72 characters. If a line exceeds this length, it should be split between multiple lines.
 
-### [Footer](#footer)
+### Footer
 
 The `footer` should contain any information about [breaking changes](#breaking-change) and references to issues that this commit closes.
 
-#### [Breaking Changes](#breaking-changes)
+#### Breaking Changes
 
 [Breaking changes](#breaking-change) must be indicated with a `BREAKING:` indicator.
 
@@ -140,14 +140,14 @@ If multiple [breaking changes](#breaking-change) are made by the commit, they mu
 - Breaking changes must not end with punctuation.
 - Lines should be no longer than 72 characters.
 
-#### [Closed Issues](#closed-issues)
+#### Closed Issues
 
 Closed issues must be indicated with the `Closes:` indicator, followed by a space and the issue references formatted in a comma and space-delimited list.
 
 - Aside from commas separating issue references, closed issues must not use punctuation.
 - Lines should be no longer than 72 characters. If a line exceeds this length, it should be split between multiple lines. The subsequent lines should not be indented.
 
-## [Examples](#examples)
+## Examples
 
 ```
 feat: add really cool feature
@@ -207,7 +207,7 @@ build(release): bump version to v1.0.0
 ops(ci): fix typo in workflow name
 ```
 
-## [Attribution](#attribution)
+## Attribution
 
 This commit convention is adapted from:
 - [Conventional Commits v1.0.0](https://www.conventionalcommits.org/en/v1.0.0/)

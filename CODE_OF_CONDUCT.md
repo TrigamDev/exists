@@ -1,6 +1,6 @@
-# [Code of Conduct](#code-of-conduct)
+# Code of Conduct
 
-## [Contents](#contents)
+## Contents
 
 - [Our Pledge](#our-pledge)
 - [Guidelines](#guidelines)
@@ -20,7 +20,7 @@
 - [Scope](#scope)
 - [Attribution](#attribution)
 
-## [Our Pledge](#our-pledge)
+## Our Pledge
 
 We pledge to make our community welcoming, safe, and equitable for all.
 
@@ -34,13 +34,13 @@ social origin, socio-economic position, level of education, or other status.
 The same privileges of participation are extended to everyone who participates
 in good faith and in accordance with this Code of Conduct.
 
-## [Guidelines](#guidelines)
+## Guidelines
 
 We agree to stand by the following guidelines in our community. Violating,
 threatening to violate, or encouraging violations of these guidelines is
 considered a breach of this Code of Conduct.
 
-### [Be Respectful](#be-respectful)
+### Be Respectful
 
 We treat all members of this community with kindness, civility, honesty, and
 respect.
@@ -55,7 +55,7 @@ comments directed at a community member or group of people. We aim to foster a
 community that is safe and welcoming to all, and such behavior has no place
 here.
 
-### [Respect Boundaries](#respect-boundaries)
+### Respect Boundaries
 
 We respect boundaries at all times. If someone expresses boundaries or requests
 us to stop interacting with them in a particular way, we will honor that request
@@ -68,7 +68,7 @@ We do not sexualize others, engage in unwanted intimacy, pressure others to be
 intimate, or engage in any sexual or intimate behavior involving a minor. These
 behaviors are strictly forbidden, without exception.
 
-### [Minimize Drama](#minimize-drama)
+### Minimize Drama
 
 We avoid starting drama, escalating or continuing drama, or bringing drama in
 from outside the community.
@@ -81,7 +81,7 @@ We strive to create a community that is welcoming, safe, and relaxing.
 Persistent drama and negativity are exhausting and draining, and there's plenty
 to be found elsewhere.
 
-### [Handle Feedback Gracefully](#handle-feedback-gracefully)
+### Handle Feedback Gracefully
 
 We give and receive constructive feedback with respect and good faith.
 
@@ -91,7 +91,7 @@ can be, not to make fun of it or embarrass its creators.
 When receiving feedback, we listen openly and respond thoughtfully, even when we
 disagree.
 
-### [Take Responsibility](#take-responsibility)
+### Take Responsibility
 
 We take responsibility for our actions, decisions, words, and contributions. Our
 actions are ours and ours alone, and we are responsible for everything we say
@@ -101,7 +101,7 @@ When our actions cause harm, whether intentional or unintentional, we make a
 sincere and best effort to remedy the harm caused, acknowledge our
 responsibility in causing it, and ensure that it is not repeated.
 
-### [Act Responsibly](#act-responsibly)
+### Act Responsibly
 
 We make our best effort to act responsibly and consider how our behavior impacts
 others and the community as a whole.
@@ -117,7 +117,7 @@ this Code of Conduct.
 We act in ways that promote the well-being of our community, and avoid behavior
 that threatens its safety, trust, or standards.
 
-### [Do Not Plagiarize](#do-not-plagiarize)
+### Do Not Plagiarize
 
 We respect the works and efforts of others.
 
@@ -126,7 +126,7 @@ misrepresented, or claimed as our own without appropriate attribution.
 
 We respect the terms of licenses associated with any work we use.
 
-### [Be Human](#be-human)
+### Be Human
 
 We value human creativity and effort.
 
@@ -138,7 +138,7 @@ We make absolutely zero use of any generative AI in creative areas, such as art
 and design. Human creativity is incredibly important, and AI cannot and should
 not replace it.
 
-## [Reporting an Issue](#reporting-an-issue)
+## Reporting an Issue
 
 Tensions can occur between community members even when they are trying their
 best to collaborate. Not every conflict represents a Code of Conduct violation,
@@ -164,14 +164,14 @@ to honor these values, enforcement actions are carried out in private with the
 involved parties, but communicating to the whole community may be part of a
 mutually agreed upon resolution.
 
-## [Enforcement](#enforcement)
+## Enforcement
 
 If an investigation finds that this Code of Conduct has been violated, we may
 apply one of the following consequences based on the severity of the violation
 and our best judgment. When applicable, a consequence will include the actions
 from every previous consequence.
 
-### [Warning](#warning)
+### Warning
 
 We issue a private, written warning describing how the Code of Conduct was
 violated, what should have been done differently, and what is expected going
@@ -181,7 +181,7 @@ To any affected by their actions, the violator must provide a private, written
 apology, acknowledgement of responsibility, and a pledge to follow this Code of
 Conduct and to not repeat their violations again in the future.
 
-### [Temporary Suspension](#temporary-suspension)
+### Temporary Suspension
 
 We may temporarily suspend the violator from making contributions and
 interacting with the community.
@@ -194,18 +194,18 @@ The violator must give a private, written apology to those affected by their
 actions and follow the conditions of the suspension in order for the suspension
 to be removed.
 
-### [Permanent Ban](#permanent-ban)
+### Permanent Ban
 
 For severe or repeated violations of this Code of Conduct, we may permanently
 remove the violator from all community spaces and activities.
 
-## [Scope](#scope)
+## Scope
 
 This Code of Conduct applies within all community spaces, within any interaction
 with community members, and when an individual is representing the community in
 public or other spaces.
 
-## [Attribution](#attribution)
+## Attribution
 
 This Code of Conduct is adapted from the Contributor Covenant, version 3.0,
 permanently available at
