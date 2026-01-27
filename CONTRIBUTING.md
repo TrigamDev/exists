@@ -6,7 +6,7 @@ This guide outlines how to contribute in a way that meets the project’s qualit
 
 Contributions of any skill level are welcome, and we’re happy to help with issues, pull requests, and feature ideas.
 
-This project and everyone participating in it are governed by the [Code of Conduct](https://github.com/TrigamDev/exists/blob/main/.github/CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code.
+This project and everyone participating in it are governed by the [Code of Conduct](https://github.com/TrigamDev/exists/blob/main/CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code.
 
 > [!Tip]
 >
@@ -196,7 +196,7 @@ bun test
 
 ### Commit Convention
 
-Commit messages should follow the [Commit Convention](https://github.com/TrigamDev/exists/blob/main/.github/COMMIT_CONVENTION.md). TL;DR: stick to [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/), as that's what our Commit Convention is adapted from. There are some minor differences, however, so we recommend taking a quick look.
+Commit messages should follow the [Commit Convention](https://github.com/TrigamDev/exists/blob/main/COMMIT_CONVENTION.md). TL;DR: stick to [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/), as that's what our Commit Convention is adapted from. There are some minor differences, however, so we recommend taking a quick look.
 
 > [!TIP]
 >
