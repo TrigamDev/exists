@@ -70,7 +70,8 @@ bun add @trigam/exists
 
 Returns a boolean of whether the given value exists or not, and if it does, asserts that the value exists.
 
-#### Example
+<details>
+<summary><strong>Example</strong></summary>
 
 ```ts
 import { exists } from "@trigam/exists"
@@ -85,12 +86,14 @@ if ( exists( foo ) ) {
 	console.log( foo.toUpperCase() ) // ! 'foo' is possibly 'null' or 'undefined'.
 }
 ```
+</details>
 
 ### `orDefault`
 
 Returns the given value if it exists. If it doesn't exist, it instead returns the provided fallback value.
 
-#### Example
+<details>
+<summary><strong>Example</strong></summary>
 
 ```ts
 import { orDefault } from "@trigam/exists"
@@ -101,6 +104,7 @@ const foo: string | null | undefined = /* Potentially non-existent value */
 // If not, this will print `HELLO, WORLD!`
 console.log( orDefault( foo, "Hello, world!" ).toUpperCase() ) // All good
 ```
+</details>
 
 ## Configuration
 
@@ -124,7 +128,8 @@ Both of these functions accept a configuration object to control their behavior.
 
 Returns `false` if the given value is `undefined`.
 
-#### Example
+<details>
+<summary><strong>Example</strong></summary>
 
 ```ts
 import { orDefault } from "@trigam/exists"
@@ -141,12 +146,14 @@ console.log( exists(
 ) )
 // true
 ```
+</details>
 
 ### `nonExistent.null`
 
 Returns `false` if the given value is `null`.
 
-#### Example
+<details>
+<summary><strong>Example</strong></summary>
 
 ```ts
 import { orDefault } from "@trigam/exists"
@@ -163,6 +170,7 @@ console.log( exists(
 ) )
 // true
 ```
+</details>
 
 ### `nonExistent.false`
 
@@ -170,7 +178,8 @@ Returns `false` if the given value is a boolean with a value of `false`.
 
 This only applies to booleans, falsy values that aren't booleans will still be considered to exist.
 
-#### Example
+<details>
+<summary><strong>Example</strong></summary>
 
 ```ts
 import { orDefault } from "@trigam/exists"
@@ -233,12 +242,14 @@ console.log( exists(
 ) )
 // true
 ```
+</details>
 
 ### `nonExistent.nan`
 
 Returns `false` if the given value is a number with the value of `NaN`.
 
-#### Example
+<details>
+<summary><strong>Example</strong></summary>
 
 ```ts
 import { orDefault } from "@trigam/exists"
@@ -255,12 +266,14 @@ console.log( exists(
 ) )
 // true
 ```
+</details>
 
 ### `nonExistent.emptyStrings`
 
 Returns `false` if the given value is an empty string.
 
-#### Example
+<details>
+<summary><strong>Example</strong></summary>
 
 ```ts
 import { orDefault } from "@trigam/exists"
@@ -277,12 +290,14 @@ console.log( exists(
 ) )
 // true
 ```
+</details>
 
 ### `nonExistent.emptyArrays`
 
 Returns `false` if the given value is an empty array.
 
-#### Example
+<details>
+<summary><strong>Example</strong></summary>
 
 ```ts
 import { orDefault } from "@trigam/exists"
@@ -299,8 +314,12 @@ console.log( exists(
 ) )
 // true
 ```
+</details>
 
 Tip: Use `exists()` to first filter the array of non-existent values first.
+
+<details>
+<summary><strong>Example</strong></summary>
 
 ```ts
 import { orDefault } from "@trigam/exists"
@@ -323,12 +342,14 @@ console.log( exists(
 ) )
 // true
 ```
+</details>
 
 ### `nonExistent.emptyObjects`
 
 Returns `false` if the given value is an object with no keys.
 
-#### Example
+<details>
+<summary><strong>Example</strong></summary>
 
 ```ts
 import { orDefault } from "@trigam/exists"
@@ -345,6 +366,7 @@ console.log( exists(
 ) )
 // true
 ```
+</details>
 
 ## FAQ
 
