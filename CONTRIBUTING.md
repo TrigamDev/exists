@@ -90,10 +90,10 @@ After submission, bug reports go through triage to determine reproducibility, va
 
 1. We label the issue accordingly.
 2. We investigate the bug.
-	- If we are unable to reproduce the bug, the issue will be labeled as `🧪 status: needs reproduction`. We may ask for more context or better reproduction steps if needed. Bugs with the `🧪 status: needs reproduction` label won't be addressed until they can be reproduced.
+	- If we are unable to reproduce the bug, the issue will be labeled as https://github.com/TrigamDev/exists/labels/status%3A%20needs%20reproduction. We may ask for more context or better reproduction steps if needed. Bugs labeled as https://github.com/TrigamDev/exists/labels/status%3A%20needs%20reproduction won't be addressed until they can be reproduced.
 	- If the issue doesn't report an actual bug, it will be relabeled accordingly.
-	- If we don't plan on fixing the bug, the issue will be labeled as `⛔️ status: not planned/won't fix`.
-3. Once the bug is able to be reproduced, we label the issue as `🏁 status: ready for development`. The issue is then open to be implemented by a contributor (which could be you).
+	- If we don't plan on fixing the bug, the issue will be labeled as https://github.com/TrigamDev/exists/labels/status%3A%20not%20planned%2Fwon%27t%20fix.
+3. Once the bug is able to be reproduced, we label the issue as https://github.com/TrigamDev/exists/labels/status%3A%20ready%20for%20development. The issue is then open to be implemented by a contributor (which could be you).
 
 ## I Want to Request a Feature or Change
 
@@ -125,9 +125,9 @@ After submission, feature requests are reviewed for alignment with the project�
 1. We review the request and label it accordingly.
 2. We may ask clarifying questions or suggest adjustments to better align with the project’s goals.
 3. We will determine if your suggestion aligns with the project's goals.
-	- If the suggestion irrevocably clashes with the project's goals, it may be rejected and we will label the issue as `⛔️ status: not planned/won't fix`.
+	- If the suggestion irrevocably clashes with the project's goals, it may be rejected and we will label the issue as https://github.com/TrigamDev/exists/labels/status%3A%20not%20planned%2Fwon%27t%20fix.
 		- If a request is rejected, we will do our best to explain why.
-	- If the suggestion is accepted, we will label the issue as `🏁 status: ready for development`. The issue is then open to be implemented by a contributor (which could be you).
+	- If the suggestion is accepted, we will label the issue as https://github.com/TrigamDev/exists/labels/status%3A%20ready%20for%20development. The issue is then open to be implemented by a contributor (which could be you).
 
 ## I Want to Contribute
 
