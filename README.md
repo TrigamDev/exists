@@ -316,33 +316,35 @@ console.log( exists(
 ```
 </details>
 
-Tip: Use `exists()` to first filter the array of non-existent values first.
-
-<details>
-<summary><strong>Example</strong></summary>
-
-```ts
-import { orDefault } from "@trigam/exists"
-
-const array: any[] = [ undefined, null ]
-
-// Correctly filters out non-existent values
-console.log( exists(
-	array.filter( ( element: any ) => {
-		return exists( element )
-	} ),
-	{ nonExistent: { emptyArrays: false } }
-) )
-// false
-
-// Incorrect, without filtering
-console.log( exists(
-	array,
-	{ nonExistent: { emptyArrays: false } }
-) )
-// true
-```
-</details>
+> [!TIP]
+>
+> Tip: Use `exists()` to first filter the array of non-existent values first.
+>
+> <details>
+> <summary><strong>Example</strong></summary>
+>
+> ```ts
+> import { orDefault } from "@trigam/exists"
+> 
+> const array: any[] = [ undefined, null ]
+> 
+> // Correctly filters out non-existent values
+> console.log( exists(
+> 	array.filter( ( element: any ) => {
+> 		return exists( element )
+> 	} ),
+> 	{ nonExistent: { emptyArrays: false } }
+> ) )
+> // false
+> 
+> // Incorrect, without filtering
+> console.log( exists(
+> 	array,
+> 	{ nonExistent: { emptyArrays: false } }
+> ) )
+> // true
+> ```
+> </details>
 
 ### `nonExistent.emptyObjects`
 
