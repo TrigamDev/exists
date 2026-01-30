@@ -1,0 +1,116 @@
+name: Bug report
+description: Create a bug or issue report
+title: "bug: "
+labels:
+  - "status: needs triage"
+  - "status: needs reproduction"
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before reporting, please try searching for existing [issues](https://github.com/TrigamDev/exists/issues) to make sure the bug hasn't already been reported.
+        Reading the [bug report section of the Contribution Guide](https://github.com/TrigamDev/exists/blob/main/CONTRIBUTING.md#i-want-to-report-a-bug) would also be appreciated.
+
+        Any questions should be asked in the [discussions](https://github.com/TrigamDev/exists/discussions).
+
+  - type: markdown
+    attributes:
+      value: ---
+
+  - type: input
+    id: library_version
+    attributes:
+      label: Library version
+      placeholder: v0.0.1
+    validations:
+      required: true
+
+  - type: input
+    id: os_version
+    attributes:
+      label: Operating system & version
+      placeholder: Windows 11
+    validations:
+      required: true
+  
+  - type: markdown
+    attributes:
+      value: ---
+
+  - type: dropdown
+    id: bug_type
+    attributes:
+      label: What type of problem is this?
+      options:
+        - Incorrect behavior
+        - Missing behavior
+        - Crash or freeze
+        - Regression
+    validations:
+      required: true
+  
+  - type: dropdown
+    id: bug_frequency
+    attributes:
+      label: How often does this problem occur?
+      options:
+        - Infrequently
+        - Somewhat frequently
+        - Frequently
+        - Always present
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Clear and consise description of the problem. Use as much detail as possible.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: Expected behavior
+      description: Clear and concise description of what you expected to happen.
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or errors
+      description: Provide any logs or error messages, if applicable.
+    validations:
+      required: false
+
+  - type: textarea
+    id: reproduction_steps
+    attributes:
+      label: Steps to reproduce
+      description: The minimal steps needed for the problem to occur.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction_code
+    attributes:
+      label: Code to reproduce
+      description: |
+        A minimal code snippet to reproduce the problem (optional).
+
+        The snippet should be:
+        - Minimal: Uses as little code as possible that still reproduces the problem (while still being understandable).
+        - Complete: Includes all parts of code needed to run and reproduce the problem.
+        - Reproducible: It does actually reproduce the problem.
+
+        This will be automatically formatted into code, so no need for backticks.
+      render: typescript
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: ---
