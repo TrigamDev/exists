@@ -61,6 +61,10 @@ body:
         - Always present
     validations:
       required: true
+  
+  - type: markdown
+    attributes:
+      value: ---
 
   - type: textarea
     id: description
@@ -77,20 +81,33 @@ body:
       description: Clear and concise description of what you expected to happen.
     validations:
       required: true
+  
+  - type: markdown
+    attributes:
+      value: ---
 
   - type: textarea
     id: logs
     attributes:
       label: Logs or errors
       description: Provide any logs or error messages, if applicable.
+      render: txt
     validations:
       required: false
+
+  - type: markdown
+    attributes:
+      value: ---
 
   - type: textarea
     id: reproduction_steps
     attributes:
       label: Steps to reproduce
       description: The minimal steps needed for the problem to occur.
+      placeholder: |
+        1. 
+        2. 
+        3. 
     validations:
       required: true
 
