@@ -91,7 +91,6 @@ body:
     attributes:
       label: Logs or errors
       description: Provide any logs or error messages, if applicable.
-      render: txt
     validations:
       required: false
 
