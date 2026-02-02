@@ -1,5 +1,5 @@
 name: Feature request
-description: Create a feature request
+description: Request for a feature to be added
 title: "feat: "
 labels:
   - "status: needs triage"
