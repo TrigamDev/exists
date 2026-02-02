@@ -9,8 +9,9 @@ body:
   - type: markdown
     attributes:
       value: |
-        Before reporting, please try searching for existing [issues](https://github.com/TrigamDev/exists/issues) to make sure the bug hasn't already been reported.
-        Reading the [bug report section of the Contribution Guide](https://github.com/TrigamDev/exists/blob/main/CONTRIBUTING.md#i-want-to-report-a-bug) would also be appreciated.
+        Before reporting, please make sure you've done the following:
+        - Searched for existing [issues](https://github.com/TrigamDev/exists/issues) to make sure the bug hasn't already been reported.
+        - Read the [bug report section of the Contribution Guide](https://github.com/TrigamDev/exists/blob/main/CONTRIBUTING.md#i-want-to-report-a-bug).
 
         Any questions should be asked in the [discussions](https://github.com/TrigamDev/exists/discussions).
 
