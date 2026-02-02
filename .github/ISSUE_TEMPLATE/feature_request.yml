@@ -1,0 +1,50 @@
+name: Feature request
+description: Create a feature request
+title: "feat: "
+labels:
+  - "status: needs triage"
+  - "goal: addition"
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before submitting, please make sure you've done the following:
+        - Searched for existing [issues](https://github.com/TrigamDev/exists/issues) to make sure the feature hasn't already been requested.
+        - Read the [feature request section of the Contribution Guide](https://github.com/TrigamDev/exists/blob/main/CONTRIBUTING.md#i-want-to-request-a-feature-or-change).
+
+        Any questions should be asked in the [discussions](https://github.com/TrigamDev/exists/discussions).
+  
+  - type: markdown
+    attributes:
+      value: ---
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Clear and consise description of the problem or missing functionality.
+      placeholder: This functionality that I really want is currently missing from the library.
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Solution
+      description: Clear and concise description of what you think should happen.
+      placeholder: This functionality should be added as a rule.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives
+      description: Any considered alternative solutions or workarounds, and if undesireable, why.
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: ---
