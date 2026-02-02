@@ -1,5 +1,5 @@
 name: Bug report
-description: Create a bug or issue report
+description: Report a bug or an issue
 title: "bug: "
 labels:
   - "status: needs triage"
