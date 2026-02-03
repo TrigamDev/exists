@@ -17,8 +17,8 @@ A very simple library for checking and asserting whether a value exists.
 ## Overview
 
 Provides two utility methods for handling potentially non-existent values:
-- `exists( value )`
-- `orDefault( value, fallback )`
+- [`exists( value )`](#exists-1)
+- [`orDefault( value, fallback )`](#ordefault)
 
 Each will assert whether the value exists, so Typescript's type checking will report the type accurately.
 
@@ -66,7 +66,7 @@ bun add @trigam/exists
 
 ## Features
 
-### `exists`
+### `exists()`
 
 Returns a boolean of whether the given value exists or not, and if it does, asserts that the value exists.
 
@@ -88,7 +88,7 @@ if ( exists( foo ) ) {
 ```
 </details>
 
-### `orDefault`
+### `orDefault()`
 
 Returns the given value if it exists. If it doesn't exist, it instead returns the provided fallback value.
 
