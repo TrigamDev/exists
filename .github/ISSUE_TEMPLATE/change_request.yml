@@ -1,0 +1,50 @@
+name: Change request
+description: Request for an existing feature to be changed
+title: "change: "
+labels:
+  - "status: needs triage"
+  - "goal: improvement"
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before submitting, please make sure you've done the following:
+        - Searched for existing [issues](https://github.com/TrigamDev/exists/issues) to make sure the improvement hasn't already been suggested.
+        - Read the [change request section of the Contribution Guide](https://github.com/TrigamDev/exists/blob/main/CONTRIBUTING.md#i-want-to-request-a-feature-or-change).
+
+        Any questions should be asked in the [discussions](https://github.com/TrigamDev/exists/discussions).
+  
+  - type: markdown
+    attributes:
+      value: ---
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Clear and consise description of the problem with the existing functionality.
+      placeholder: This rule shouldn't work like this,
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Solution
+      description: Clear and concise description of what you think should happen.
+      placeholder: This rule should work like this instead.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives
+      description: Any considered alternative solutions or workarounds, and if undesireable, why.
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: ---
