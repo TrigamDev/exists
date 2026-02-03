@@ -24,7 +24,7 @@ body:
     attributes:
       label: Description
       description: Clear and consise description of the problem with the existing functionality.
-      placeholder: This rule shouldn't work like this,
+      placeholder: This rule shouldn't work like this.
     validations:
       required: true
 
