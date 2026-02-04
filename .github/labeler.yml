@@ -1,8 +1,8 @@
 "bug: incorrect behavior":
-  - "### What type of problem is this\\?\\nIncorrect behavior"
+  - "### What type of problem is this\\?\\n\\nIncorrect behavior"
 "bug: missing behavior":
-  - "### What type of problem is this\\?\\nMissing behavior"
+  - "### What type of problem is this\\?\\n\\nMissing behavior"
 "bug: crash/freeze":
-  - "### What type of problem is this\\?\\nCrash or freeze"
+  - "### What type of problem is this\\?\\n\\nCrash or freeze"
 "bug: regression":
-  - "### What type of problem is this\\?\\nRegression"
+  - "### What type of problem is this\\?\\n\\nRegression"
