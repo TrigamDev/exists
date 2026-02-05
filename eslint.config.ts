@@ -47,9 +47,9 @@ const config: Config[] = defineConfig( [
 
 		rules: {
 			/*
-				Style
-				-----
-				- Mainly just opinionated styling, positioning, and spacing
+				------------------- Style -------------------
+				- Mainly just opinionated styling,
+				  positioning, and spacing
 			*/
 			// Naming
 			"camelcase": [ "warn", {
@@ -274,8 +274,7 @@ const config: Config[] = defineConfig( [
 			} ],
 
 			/*
-				Convention/Consistency
-				----------------------
+				---------- Convention/Consistency -----------
 				- Formatting to stay consistent throughout
 				  the codebase
 			*/
@@ -401,8 +400,7 @@ const config: Config[] = defineConfig( [
 			"sort-vars": "off",
 
 			/*
-				Complexity
-				----------
+				---------------- Complexity -----------------
 				- Prevent too much complexity in the codebase
 				  to improve readability
 			*/
@@ -435,10 +433,11 @@ const config: Config[] = defineConfig( [
 			"@stylistic/one-var-declaration-per-line": "off",
 
 			/*
-				Disambiguation
-				--------------
-				- Behavior that is likely unintuitive and unwanted
-				- Syntax that may be confusing and hard to read
+				-------------- Disambiguation ---------------
+				- Behavior that is likely unintuitive and
+				  unwanted
+				- Syntax that may be confusing and hard to
+				  read
 				- Amibguous or unclear names
 			*/
 
@@ -531,10 +530,9 @@ const config: Config[] = defineConfig( [
 			"vars-on-top": "off",
 
 			/*
-				Inefficiencies
-				-------------
-				- Oversights that result in more work being done
-				  than neccessary
+				-------------- Inefficiencies ---------------
+				- Oversights that result in more work being
+				  done than neccessary
 				- Unneccesary formatting and syntax
 			*/
 			"@stylistic/comma-dangle": [ "warn", "never" ],
@@ -609,10 +607,9 @@ const config: Config[] = defineConfig( [
 			"require-yield": "warn",
 
 			/*
-				Logic Errors
-				------------
-				- Possible errors in logic that results in the program
-				  not functioning as intended
+				--------------- Logic errors ----------------
+				- Possible errors in logic that results in
+				  the program not functioning as intended
 			*/
 			"array-callback-return": [ "error", {
 				checkForEach: true,
@@ -665,10 +662,9 @@ const config: Config[] = defineConfig( [
 			"valid-typeof": "error",
 
 			/*
-				Security
-				-------------
-				- Things that could introduce secuity issues to
-				  the program
+				----------------- Security ------------------
+				- Bad practices that could introduce secuity
+				  issues to the program
 			*/
 			"no-eval": "error",
 			"no-implied-eval": "error",
@@ -676,10 +672,10 @@ const config: Config[] = defineConfig( [
 			"no-script-url": "error",
 
 			/*
-				Deprecated
-				-------------
-				- Features or functionality that's deprecated or
-				  otherwise lacking, and should be replaced with alternatives
+				---------------- Deprecated -----------------
+				- Features or functionality that are
+				  deprecated or otherwise lacking, and should
+				  be replaced with alternatives
 			*/
 			"@depend/ban-dependencies": [ "error", {
 				presets: [
@@ -696,8 +692,7 @@ const config: Config[] = defineConfig( [
 			"no-proto": "error",
 
 			/*
-				Restricted Patterns
-				-------------------
+				------------ Restricted patterns ------------
 				- Lists of restricted names and patterns, for
 				  various reasons
 			*/
