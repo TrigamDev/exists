@@ -465,7 +465,7 @@ const config: Config[] = defineConfig( [
 			"no-sequences": "error",
 			"no-var": "error",
 			"require-unicode-regexp": [ "error", { requireFlag: "v" } ],
-			"@import/unambiguous": "error",
+			"@import/unambiguous": "off",
 			"use-isnan": [ "error", {
 				enforceForSwitchCase: true,
 				enforceForIndexOf: true
