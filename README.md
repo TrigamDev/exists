@@ -12,6 +12,8 @@
 
 </div>
 
+## About
+
 A very simple library for checking and asserting whether a value exists.
 
 ## Overview
