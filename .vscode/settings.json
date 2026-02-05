@@ -55,6 +55,10 @@
 					"description": "Commits that rewrite or restructure code without altering behavior."
 				},
 				{
+					"label": "style",
+					"description": "Commits that change code style without altering it's content."
+				},
+				{
 					"label": "perf",
 					"description": "Commits that improve performance without altering behavior."
 				},
@@ -114,7 +118,7 @@
 		{
 			"label": "Body",
 			"description": "An optional, extended description of the changes being made, and should include the motivation for the change and contrast the new behavior with old behavior",
-			
+
 			"name": "body",
 			"type": "text",
 			"multiline": true,

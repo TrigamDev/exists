@@ -57,20 +57,21 @@ The `type` must indicate the type of change the commit makes.
 
 The type must be one of the following:
 
-| Type           | Description                                                                                             |
-|----------------|---------------------------------------------------------------------------------------------------------|
-| `feat`         | Commits that add, change, or remove features.                                                           |
-| `fix`          | Commits that fix a bug or an issue.                                                                     |
-| `refactor`     | Commits that rewrite or restructure code without altering behavior.                                     |
-| `perf`         | Commits that improve performance without altering behavior.                                             |
-| `translations` | Commits that affect translations.                                                                       |
-| `tests`        | Commits that affect tests.                                                                              |
-| `build`        | Commits that affect build-related components, such as build tools, dependencies, etc.                   |
-| `ops`          | Commits that affect operational aspects, such as infrastructure, deployment, CI/CD pipelines, etc.      |
+| Type           | Description                                                                                            |
+|----------------|--------------------------------------------------------------------------------------------------------|
+| `feat`         | Commits that add, change, or remove features.                                                          |
+| `fix`          | Commits that fix a bug or an issue.                                                                    |
+| `refactor`     | Commits that rewrite or restructure code without altering behavior.                                    |
+| `style`        | Commits that change code style without altering it's content.                                          |
+| `perf`         | Commits that improve performance without altering behavior.                                            |
+| `translations` | Commits that affect translations.                                                                      |
+| `tests`        | Commits that affect tests.                                                                             |
+| `build`        | Commits that affect build-related components, such as build tools, dependencies, etc.                  |
+| `ops`          | Commits that affect operational aspects, such as infrastructure, deployment, CI/CD pipelines, etc.     |
 | `chore`        | Commits that represent basic maintenance and tasks, such as initial commit, `.gitignore` changes, etc. |
-| `merge`        | Commits that merge multiple branches.                                                                   |
-| `revert`       | Commits that revert previous commits.                                                                   |
-| `docs`         | Commits that affect documentation.                                                                      |
+| `merge`        | Commits that merge multiple branches.                                                                  |
+| `revert`       | Commits that revert previous commits.                                                                  |
+| `docs`         | Commits that affect documentation.                                                                     |
 
 If the `type` is `revert`:
 - The header should be that of the commit being reverted.

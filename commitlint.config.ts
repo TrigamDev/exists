@@ -33,6 +33,7 @@ const Config: UserConfig = {
 			"feat",
 			"fix",
 			"refactor",
+			"style",
 			"perf",
 			"translations",
 			"tests",
