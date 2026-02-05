@@ -3,12 +3,12 @@
 # Exists
 
 <!-- NPM info -->
-[![NPM Version](https://img.shields.io/npm/v/%40trigam%2Fexists?style=for-the-badge)](https://www.npmjs.com/package/@trigam/exists)
-[![NPM Downloads](https://img.shields.io/npm/dy/%40trigam%2Fexists?style=for-the-badge)](https://npm-stat.com/charts.html?package=@trigam/exists)
-[![Install Size](https://img.shields.io/badge/dynamic/json?url=https://packagephobia.com/v2/api.json?p=@trigam/exists&query=$.install.pretty&label=install%20size&style=for-the-badge)](https://packagephobia.now.sh/result?p=@trigam/exists)
+[![NPM Version][npm-version-badge]][npm]
+[![NPM Downloads][npm-downloads-badge]][npm-downloads]
+[![Install Size][install-size-badge]][install-size]
 
-[![GitHub License](https://img.shields.io/github/license/TrigamDev/exists?style=for-the-badge)](https://github.com/TrigamDev/exists/blob/main/LICENSE.md)
-[![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://dsc.gg/trigam-den)
+[![GitHub License][github-license-badge]][github-license]
+[![Discord][discord-badge]][discord]
 
 </div>
 
@@ -325,9 +325,9 @@ console.log( exists(
 >
 > ```ts
 > import { orDefault } from "@trigam/exists"
-> 
+>
 > const array: any[] = [ undefined, null ]
-> 
+>
 > // Correctly filters out non-existent values
 > console.log( exists(
 > 	array.filter( ( element: any ) => {
@@ -336,7 +336,7 @@ console.log( exists(
 > 	{ nonExistent: { emptyArrays: false } }
 > ) )
 > // false
-> 
+>
 > // Incorrect, without filtering
 > console.log( exists(
 > 	array,
@@ -378,3 +378,25 @@ In complete honesty, I mostly just published this cause I'm tired of copy+pastin
 
 ## Help
 If you don't understand something, need help, or just have some questions, come ask me on my [Discord server](https://dsc.gg/trigam-den).
+
+<!-- Definitions -->
+
+[npm-version-badge]: https://img.shields.io/npm/v/%40trigam%2Fexists?style=for-the-badge
+
+[npm]: https://www.npmjs.com/package/@trigam/exists
+
+[npm-downloads-badge]: https://img.shields.io/npm/dy/%40trigam%2Fexists?style=for-the-badge
+
+[npm-downloads]: https://npm-stat.com/charts.html?package=@trigam/exists
+
+[install-size-badge]: https://img.shields.io/badge/dynamic/json?url=https://packagephobia.com/v2/api.json?p=@trigam/exists&query=$.install.pretty&label=install%20size&style=for-the-badge
+
+[install-size]: https://packagephobia.now.sh/result?p=@trigam/exists
+
+[github-license-badge]: https://img.shields.io/github/license/TrigamDev/exists?style=for-the-badge
+
+[github-license]: https://github.com/TrigamDev/exists/blob/main/LICENSE.md
+
+[discord-badge]: https://img.shields.io/discord/1050241893088366612?style=for-the-badge&logo=discord&logoColor=e0e3ff&label=Discord&color=5865F2
+
+[discord]: https://dsc.gg/trigam-den
