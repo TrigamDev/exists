@@ -134,6 +134,8 @@ We minimize the use of AI tools, AI agents, and other generative AI in our
 contributions. All contributions are majority human-created, and any small
 amount that isn't has been thoroughly reviewed by a human.
 
+In any instance where AI *is* used, it will be transparently disclosed in [`AI_USAGE.md`](./AI_USAGE.md) with an explanation as to why.
+
 We make absolutely zero use of any generative AI in creative areas, such as art
 and design. Human creativity is incredibly important, and AI cannot and should
 not replace it.
