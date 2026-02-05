@@ -1,6 +1,9 @@
 {
 	"recommendations": [
+		"christian-kohler.npm-intellisense",
+		"christian-kohler.path-intellisense",
+		"dbaeumer.vscode-eslint",
 		"iliazeus.vscode-ansi",
-		"adam-bender.commit-message-editor"
+		"adam-bender.commit-message-editor",
 	]
 }
