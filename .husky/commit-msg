@@ -1,6 +1,8 @@
-echo "
+#!/bin/sh
 
-
-[1mLinting commit message...[0m
-"
+# ----------- Lint commit message -----------
+printf "\n\n\n[1mLinting commit message...[0m\n"
 bunx --no -- commitlint --edit $1
+
+# ----------------- Finish ------------------
+exit 0

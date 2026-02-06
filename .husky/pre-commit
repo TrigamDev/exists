@@ -1,14 +1,12 @@
-echo "
+#!/bin/sh
 
-
-[1mLinting...[0m
-"
+# ------------ Lint staged files ------------
+printf "\n\n\n[1mLinting...[0m\n"
 FORCE_COLOR=1 bunx lint-staged
 
-echo "
-
-
-[1mTesting...[0m
-"
+# ---------------- Run tests ----------------
+printf "\n\n\n[1mTesting...[0m\n"
 FORCE_COLOR=1 bun test
-# exit 1
+
+# ----------------- Finish ------------------
+exit 0
