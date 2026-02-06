@@ -27,7 +27,8 @@
 	"scripts": {
 		"build": "tsup",
 		"lint": "bunx --bun eslint",
-		"prepare": "husky"
+		"prepare": "husky",
+		"changelog": "git cliff --output CHANGELOG.md"
 	},
 	"lint-staged": {
 		"**/*.{js,mjs,cjs,ts,mts,cts}": ["bun run lint"]

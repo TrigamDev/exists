@@ -13,6 +13,9 @@ All notable changes to this project will be documented in this file.
 - docs: move docs to project root ([857c8fd](https://github.com/TrigamDev/exists/commit/857c8fda357d8e8c4f01fe4d93ea54438109bf59)) by @TrigamDev
 - docs: add contents section to code of conduct and commit convention ([38f4452](https://github.com/TrigamDev/exists/commit/38f445213ae556ec7ba65d3978e99bc2d6c52258)) by @TrigamDev
 
+### [`CHANGELOG.md`](https://github.com/TrigamDev/exists/blob/main/CHANGELOG.md) 
+- docs(changelog): add automatic changelog generation ([99cec9c](https://github.com/TrigamDev/exists/commit/99cec9c2589deac48890e2671fc0f7456545643b)) by @TrigamDev
+
 ### [`CODE_OF_CONDUCT.md`](https://github.com/TrigamDev/exists/blob/main/CODE_OF_CONDUCT.md) 
 - docs(code of conduct): make section headers linkable ([2238f47](https://github.com/TrigamDev/exists/commit/2238f470179c65856cb572c0f5467e3fe6f6ca75)) by @TrigamDev
 - docs(code of conduct): add code of conduct ([6f1269d](https://github.com/TrigamDev/exists/commit/6f1269dff088bf9c05abc433d0d6dd91f559957f)) by @TrigamDev

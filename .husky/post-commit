@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# Prevent infinite amend loop
+if [ "$SKIP_CHANGELOG" = "1" ]; then
+	exit 0
+fi
+
+# ----------- Generate changelog ------------
+printf "\n\n\n[1mGenerating changelog...[0m\n"
+bun run changelog
+git add CHANGELOG.md
+SKIP_CHANGELOG=1 git commit --amend --no-edit --no-verify
+
+# ----------------- Finish ------------------
+exit 0

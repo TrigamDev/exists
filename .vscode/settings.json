@@ -1,7 +1,9 @@
 {
 	"files.associations": {
 		// ANSI Colors
-		"git-error-*": "ansi"
+		"git-error-*": "ansi",
+		// Jinja
+		"cliff.toml": "jinja-toml"
 	},
 
 	// Commit Message Editor
