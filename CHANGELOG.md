@@ -16,7 +16,7 @@ All notable changes to this project will be documented in this file.
 - docs(ai usage): add ai usage disclosure ([98f9f7d](https://github.com/TrigamDev/exists/commit/98f9f7dac767a620a62acbf053554aec5acbd0c0)) by @TrigamDev
 
 ### [`CHANGELOG.md`](https://github.com/TrigamDev/exists/blob/main/CHANGELOG.md) 
-- docs(changelog): update changelog ([a8d1fc7](https://github.com/TrigamDev/exists/commit/a8d1fc78770c0001a02f70f8c9520cdf4f9c6fbf)) by @TrigamDev
+- docs(changelog): update changelog ([bec81f3](https://github.com/TrigamDev/exists/commit/bec81f391504cfa13fc73b1ca5fb5c7715ae04f3)) by @TrigamDev
 - docs(changelog): add automatic changelog generation ([24fbd1c](https://github.com/TrigamDev/exists/commit/24fbd1c2d403315da7f1829698e080b3b18359e6)) by @TrigamDev
 
 ### [`CODE_OF_CONDUCT.md`](https://github.com/TrigamDev/exists/blob/main/CODE_OF_CONDUCT.md) 
